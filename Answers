@@ -1,3 +1,7 @@
 #1 Code
   df[df["Age"]>40]                                        #to get the details for the customer with conditions
   df["CutomerID"][df["Age"]>40].value_counts().sum()      #this fill show the count of the customer
+
+#2 code
+  df.sort_values(by=["Spending Score (1-100)"],ascending=False)  #this will sort the dataset as per top spender to lowest
+  df.nlargest(5,["Spending Score (1-100)"])                      #this will directly show the top 5 customer of top spending
